@@ -20,5 +20,11 @@ ul {
             font-weight: bold;
 }
 h2:hover {
-           color: yellow;
+           color:yellow;
+}
+a:visited {
+          color: green;
+}
+a:hover {
+        font-size: 150%;
 }
