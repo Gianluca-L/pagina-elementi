@@ -14,3 +14,9 @@ p {
 ul {
   margin-left: 10px;
 }
+.importante {
+            font-style: italic;
+}
+.importante em {
+            font-weight: bold;
+}
