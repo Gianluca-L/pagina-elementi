@@ -30,3 +30,18 @@ body {
       width: 100vw;
       height: 100vh;
 }
+@font-face {
+   font-family: 'GeosansLight';
+<!-- src: url(font_name.eot); -->
+   src: local('GeosansLight'), url('GeosansLight.ttf') format('truetype');
+}
+#nomecognome {
+             position: absolute;
+             top: 25%;
+             left: 0%;
+             width: 100vw;
+             text-align: center;
+             color: white;
+             font-family: "GeosansLight";
+             font-size: 50px;
+}
