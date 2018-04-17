@@ -24,9 +24,9 @@ body {
                }
 #main {
       position: absolute;
-      top: 60%;
+      top: 50%;
       left: 0%;
-      background-color: green;
+      background: linear-gradient(#000000, #696d70);
       width: 100vw;
       height: 100vh;
 }
