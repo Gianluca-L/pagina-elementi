@@ -1,8 +1,10 @@
 body {
       background-color: black;
+      font-family: 'GeosansLight';
 }
 #container {
            position: relative;
+           overflow: scroll;
            width: 100vw;
            height: 100vh;
 }
@@ -37,7 +39,7 @@ body {
 }
 #nomecognome {
              position: absolute;
-             top: 25%;
+             top: 30%;
              left: 0%;
              width: 100vw;
              text-align: center;
@@ -45,3 +47,46 @@ body {
              font-family: "GeosansLight";
              font-size: 50px;
 }
+#stringasticky {
+               position: relative;
+               top: 0%;
+               width: 100vw;
+               height: 100px;
+               background-color: #696d70;
+}
+#portfoliobutton {
+                 position: absolute;
+                 top: 30%;
+                 right: 30%;
+                 font-size: 30px;
+                 font-weight: bold;
+                 color: #000000;
+                 border-bottom: 0px solid #000000;
+}
+#portfoliobutton:hover {
+                       border-bottom: 2px solid #000000;
+
+
+}
+#exercisesbutton {
+                 position: absolute;
+                 top: 30%;
+                 right: 17.5%;
+                 font-size: 30px;
+                 font-weight: bold;
+                 color: #000000;
+}
+#exercisesbutton:hover {
+                       border-bottom: 2px solid #000000;
+                     }
+#aboutbutton {
+                 position: absolute;
+                 top: 30%;
+                 right: 7.75%;
+                 font-size: 30px;
+                 font-weight: bold;
+                 color: #000000;
+}
+#aboutbutton:hover {
+                       border-bottom: 2px solid #000000;
+                     }
