@@ -54,6 +54,9 @@ body {
                height: 100px;
                background-color: #696d70;
 }
+a:hover {
+        cursor: pointer;
+      }
 #portfoliobutton {
                  position: absolute;
                  top: 30%;
@@ -65,8 +68,7 @@ body {
 }
 #portfoliobutton:hover {
                        border-bottom: 2px solid #000000;
-                       cursor: pointer;
-                  }
+                                         }
 #exercisesbutton {
                  position: absolute;
                  top: 30%;
