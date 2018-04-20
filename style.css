@@ -4,7 +4,7 @@ body {
 }
 #container {
            position: relative;
-           overflow: scroll;
+      <!-- overflow: scroll; -->
            width: 100vw;
            height: 100vh;
 }
@@ -65,9 +65,8 @@ body {
 }
 #portfoliobutton:hover {
                        border-bottom: 2px solid #000000;
-
-
-}
+                       cursor: pointer;
+                  }
 #exercisesbutton {
                  position: absolute;
                  top: 30%;
@@ -75,9 +74,10 @@ body {
                  font-size: 30px;
                  font-weight: bold;
                  color: #000000;
-}
+                 }
 #exercisesbutton:hover {
                        border-bottom: 2px solid #000000;
+                       cursor: pointer;
                      }
 #aboutbutton {
                  position: absolute;
@@ -89,4 +89,5 @@ body {
 }
 #aboutbutton:hover {
                        border-bottom: 2px solid #000000;
+                       cursor: pointer;
                      }
