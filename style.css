@@ -64,11 +64,13 @@ a:hover {
                  font-size: 30px;
                  font-weight: bold;
                  color: #000000;
-                 border-bottom: 0px solid #000000;
+                 border-bottom: 2px solid #000000;
 }
+/*
 #portfoliobutton:hover {
                        border-bottom: 2px solid #000000;
                                          }
+*/
 #exercisesbutton {
                  position: absolute;
                  top: 30%;
@@ -93,3 +95,24 @@ a:hover {
                        border-bottom: 2px solid #000000;
                        cursor: pointer;
                      }
+#Guerraperilliuto {
+                  position: absolute;
+                  top: 60%;
+                  left: 2%;
+                  max-width: 30vw;
+}
+/* GUERRA PER IL LIUTO */
+#portfoliobuttonLiuto {
+                 position: absolute;
+                 top: 30%;
+                 right: 30%;
+                 font-size: 30px;
+                 font-weight: bold;
+                 color: #000000;
+                 border-bottom: 2px solid #000000;
+               }
+#videoLiuto {
+            position: absolute;
+            top: 0%;
+            left: 25%;
+          }
