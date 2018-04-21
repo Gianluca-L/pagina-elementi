@@ -99,12 +99,20 @@ a:hover {
                        border-bottom: 2px solid #000000;
                        cursor: pointer;
                      }
+.containerimg {
+              position: absolute;
+              top: 60%;
+              left: 0%;
+              width: 100vw;
+}
 #Guerraperilliuto {
                   position: absolute;
-                  top: 60%;
-                  left: 2%;
+                  top: 0%;
+                  left: 9%;
                   max-width: 30vw;
 }
+
+
 /* GUERRA PER IL LIUTO */
 #portfoliobuttonLiuto {
                  position: absolute;
