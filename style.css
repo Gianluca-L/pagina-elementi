@@ -1,6 +1,9 @@
 body {
+  /*  margin-left: 0;
+      margin-top: 0; */
       background-color: black;
       font-family: 'GeosansLight';
+      font-size: 12px;
 }
 #container {
            position: relative;
@@ -13,7 +16,7 @@ body {
                top: 50%;
                background-color: grey;
                opacity: 1;
-               height: 2px;
+               height: 0.16666666666em;
                width: 100vw;
                border-radius: 50%;
                animation: pulse 15s infinite;
@@ -34,7 +37,7 @@ body {
 }
 @font-face {
    font-family: 'GeosansLight';
-<!-- src: url(font_name.eot); -->
+/* src: url(font_name.eot); */
    src: local('GeosansLight'), url('GeosansLight.ttf') format('truetype');
 }
 #nomecognome {
@@ -45,13 +48,14 @@ body {
              text-align: center;
              color: white;
              font-family: "GeosansLight";
-             font-size: 50px;
+             font-size: 4.16666666667em; /* 50px/12px = 4.16666666667em */
+          /* text-decoration: blink; */
 }
 #stringasticky {
                position: sticky;
                top: 0%;
                width: 100vw;
-               height: 100px;
+               height: 8.33333333333em; /* 100px */
                background-color: #696d70;
 }
 a:hover {
@@ -61,7 +65,7 @@ a:hover {
                  position: absolute;
                  top: 30%;
                  right: 30%;
-                 font-size: 30px;
+                 font-size: 2.5em;
                  font-weight: bold;
                  color: #000000;
                  border-bottom: 2px solid #000000;
@@ -75,7 +79,7 @@ a:hover {
                  position: absolute;
                  top: 30%;
                  right: 17.5%;
-                 font-size: 30px;
+                 font-size: 2.5em;
                  font-weight: bold;
                  color: #000000;
                  }
@@ -87,7 +91,7 @@ a:hover {
                  position: absolute;
                  top: 30%;
                  right: 7.75%;
-                 font-size: 30px;
+                 font-size: 2.5em;
                  font-weight: bold;
                  color: #000000;
 }
