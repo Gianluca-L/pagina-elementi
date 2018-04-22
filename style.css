@@ -7,7 +7,7 @@ body {
 }
 #container {
            position: relative;
-      <!-- overflow: scroll; -->
+        /* overflow: scroll; */
            width: 100vw;
            height: 100vh;
 }
@@ -99,6 +99,7 @@ a:hover {
                        border-bottom: 2px solid #000000;
                        cursor: pointer;
                      }
+/* IMMAGINI PORTFOLIO */
 .containerimg {
               position: absolute;
               top: 60%;
@@ -108,8 +109,20 @@ a:hover {
 #Guerraperilliuto {
                   position: absolute;
                   top: 0%;
-                  left: 9%;
+                  left: 9%; /* top 60% e left 2% senza le colonne */
                   max-width: 30vw;
+}
+#Playingcards {
+              position: absolute;
+              top: 0%;
+              left: 5%;
+              max-width: 30vw;
+}
+#Bookcover {
+              position: absolute;
+              top: 0%;
+              left: 0%;
+              max-width: 30vw;
 }
 
 
