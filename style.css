@@ -125,17 +125,28 @@ a:hover {
 }
 
 /* GUERRA PER IL LIUTO */
-#portfoliobuttonLiuto {
-                 position: absolute;
-                 top: 30%;
-                 right: 30%;
-                 font-size: 30px;
-                 font-weight: bold;
-                 color: #000000;
-                 border-bottom: 2px solid #000000;
-               }
 #videoLiuto {
             position: absolute;
             top: 0%;
             left: 25%;
           }
+/* PLAYING CARDS */
+#carousel {
+          position: absolute;
+          top: 7%;
+          left: 25%;
+                    }
+
+.d-blockw-100 {
+              width: 50vw;
+              align: center;
+}
+.carousel-control-prev-icon {
+                            background-color: #000000;
+}
+.carousel-control-next-icon {
+                            background-color: #000000;
+}
+#carouselExampleControls {
+                         background-color: #000000;
+}
