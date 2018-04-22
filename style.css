@@ -123,7 +123,19 @@ a:hover {
                   left: 0%;
                   max-width: 30vw;
 }
-
+/* BOTTOM CONTROLS */
+.bottom_controls {
+                 position: relative;
+                 top: 70%;
+                 width: 100vw;
+                 height: 30vh;
+}
+.container_controls {
+                    position: absolute;
+                    top: 50%;
+                    width: 100vw;
+                    height: 5vh;
+}
 /* GUERRA PER IL LIUTO */
 #videoLiuto {
             position: absolute;
@@ -169,3 +181,11 @@ a:hover {
 #portfoliobuttonEx:hover {
                        border-bottom: 2px solid #000000;
                                          }
+/* BOTTOM CONTROLS */
+
+.Backtoallprojects, .Previousproject, .NextProject {
+     font-size: 1.3em;
+     font-weight: bold;
+     color: #000000;
+
+}
