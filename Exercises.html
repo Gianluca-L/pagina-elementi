@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en">
 <head>
+  <script src = "jquery.js"></script>
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -8,6 +9,9 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
   <style>
+  .blocco_scroll {
+    overflow-y: hidden;
+  }
   #lista {
     position: absolute;
     top: 20%;
@@ -26,11 +30,11 @@
   }
   #text_box_model{
     position: absolute;
-    top: 5%;
+    top: 55%;
   }
   #fascia_box_model {
     position: absolute;
-    top: 25%;
+    top: 65%;
     width: 100vw;
     height: 328.8px;
     max-width: 100%;
@@ -57,17 +61,33 @@
     left: 60%;
     transform: translateY(-50%);
   }
+  /*#sfondo_opaco {
+    position: absolute;
+    top: 0%;
+    width: 100vw;
+    height: 100vh;
+    max-width: 100%;
+    background-color: black;
+    opacity: 0.5;
+  }*/
+  .hidden {
+    visibility: hidden;
+  }
+  .visible {
+    visibility: visible;
+  }
+
   #source {
     position: absolute;
     top: 50%;
     left: 65%;
     transform: translate(-50%,-50%);
     width: 800px;
-    height: 328.8px;
+    height: 500px;
     background-color: white;
     border-radius: 5px;
     border-bottom-right-radius: 0px;
-  }
+    }
   #source_bar {
     position: absolute;
     width: 800px;
@@ -84,7 +104,7 @@
     position: absolute;
     bottom: 0%;
     width: 800px;
-    height: 228.8px;
+    height: 400px;
     background-color: white;
     border-radius: 5px;
     border-radius: 0px;
@@ -115,13 +135,24 @@
     color: white;
     font-size: 14px;
   }
+  #x {
+    position: absolute;
+    top: -30%;
+    right: 6%;
+    width: 20px;
+    height: 20px;
+  }
+  #x_icon {
+    width: 20px;
+    height: 20px;
+  }
 
   </style> <link rel = "stylesheet" href = "style.css">
   <title>Esercizi | Gianluca Locatelli</title>
 </head>
 <body>
 
-  <div id = "container">
+
 
     <div id = "lista">
       <h2>ESERCIZI</h2>
@@ -134,7 +165,7 @@
    </div>
 
 
-    <div id = "main">
+
 
       <div id = "text_box_model"><h2>The Box Model</h2></div>
       <div id = "fascia_box_model">
@@ -144,9 +175,11 @@
         <footer class = "box">Footer</footer>
       </div>
 
-      <button type="button" class="btn btn-outline-light">Source</button>
+      <button id = "source_button" type="button" class="btn btn-outline-light">Source</button>
 
-      <div id = "source">
+      <div id = "x" class = "hidden"><img id = "x_icon" src="img/x_icon.png"></div>
+
+      <div id = "source" class = "hidden">
 
           <div id = "source_bar">
 
@@ -177,10 +210,9 @@
              border: dashed rgb(128,128,0) 20px;<br>
            }</p>
          </div>
+     </div>
     </div>
 
-    </div>
-  </div>
 
 
     <div id = "stringasticky">
@@ -193,8 +225,35 @@
 
 
 
-  </div>
 
+
+ <!--<div id = "sfondo_opaco" class = "hidden"></div>-->
+
+
+
+ <script>
+
+   $("#source_button").on("click", function() {
+     $("#source").removeClass("hidden")
+     $("#source").addClass("visible")
+     $("#sfondo_opaco").removeClass("hidden")
+     $("#sfondo_opaco").addClass("visible")
+     $("#x").removeClass("hidden")
+     $("#x").addClass("visible")
+   })
+
+   $("#x").on("click", function() {
+     if($("#x").hasClass("visible")){
+          $("#x").removeClass("visible")
+          $("#x").addClass("hidden")
+          $("#source").removeClass("visible")
+          $("#source").addClass("hidden")
+   }})
+
+
+
+
+ </script>
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
