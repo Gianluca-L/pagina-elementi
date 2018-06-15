@@ -1,6 +1,8 @@
 <!doctype html>
 <html lang="en">
 <head>
+  <script src = "jquery.js"></script>
+
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -14,10 +16,16 @@
 </head>
 <body>
 
-<div id = "container_PC">
+<div id = "container">
 
-    <div id = "nomecognome_PC">Playing Cards</div>
-    <div id = "main_PC">
+    <div id = "nomecognome">Playing Cards</div>
+
+      <div id = "barraluminosa"></div>
+
+</div>
+    <div id = "main_Playincards">
+
+    <div id = "container_content_Playincards">
 
       <div id = "carousel">
         <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
@@ -48,40 +56,63 @@
   </a>
 </div>
 </div>
+
+<div id = "container_testo_Playincards">
+<h2>Milano Play History</h2>
+<p>Mazzo di carte da gioco composto da 54 carte disegnate <b>a mano</b> e successivamente elaborate al computer.
+Le carte rappresentano monumenti, edifici, reperti e personaggi più o meno famosi della storia di Milano dalla sua fondazione
+fino ai giorni nostri.</P>
 </div>
-<!-- BOTTOM CONTROLS -->
+
+</div>
+
+
+<!--BOTTOM CONTROLS-->
 <div class = "bottom_controls">
-  <div class="container_controls">
-
-<div class="Prevproj"><a class = "Previousproject" href = "Guerraperilliuto.html">Previous Project</a></div>
-
-
-<div class="home"><a class = "Backtoallprojects" href = "Index.html">Back to all projects</a></div>
-
-<div class="Nextproj"><a class = "NextProject" href = "Bookcover.html">Next Project</a></div>
+ <div class="container_controls">
+   <a class = "Previousproject" href = "Guerraperilliuto.html"><div id = "Progetto_Precedente" class="Prevproj Prevproj_pos">Progetto<br>Precedente
+                                                                 <div id = "barretta_controls_sx" class="barretta_w0"></div></div></a>
 
 
 
-<!-- end bottom controls -->
-    </div>
-    </div>
+      <a class = "Backtoallprojects" href = "Index.html">
+      <div id = "container_home" title="Torna alla home">
+
+         <div id = "blocco_1" class = "home_icon"></div>
+         <div id = "blocco_2" class = "home_icon"></div>
+         <div id = "blocco_3" class = "home_icon"></div>
+
+     </div>
+     </a>
 
 
-    <div id = "barraluminosa_PC"></div>
+
+   <a class = "NextProject" href = "Bookcover.html"><div id = "Prossimo_Progetto" class="Nextproj Nextproj_pos">Prossimo<br>Progetto
+                                                                 <div id = "barretta_controls" class="barretta_w0"></div></div></a>
+</div>
+</div>
+<!--END BOTTOM CONTROLS-->
+
+</div>
+
+
+
+
+
 
 
     <div id = "stringasticky">
 
         <a href = "index.html"><div id = "portfoliobutton">PORTFOLIO</div></a>
         <a href = "Exercises.html"><div id = "exercisesbutton">ESERCIZI</div></a>
-        <div id = "aboutbutton">ABOUT</div>
+        <a href = "about.html"><div id = "aboutbutton">ABOUT</div></a>
 
     </div>
 
 
-</div>
 
 
+  <script src = "script.js"></script>
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

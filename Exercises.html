@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <script src = "jquery.js"></script>
+
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -12,471 +13,6 @@
   /*.blocco_scroll {
     overflow-y: hidden;
   }*/
-  #lista {
-    position: absolute;
-    top: 20%;
-  }
-  h2 {
-    font-size: 30px;
-    color: white;
-    margin-left: 10px;
-  }
-  li {
-    font-size: 20px;
-    color: white;
-    margin-top: 20px;
-  }
-  p {
-    margin-left: 10px;
-  }
-  #text_box_model{
-    position: absolute;
-    top: 70%;
-  }
-  #fascia_box_model {
-    position: absolute;
-    top: 80%;
-    width: 100vw;
-    height: 328.8px;
-    max-width: 100%;
-  }
-  #container_box_model * {
-    width: 400px;
-    margin-left: 20px;
-    padding: 20px;
-    font-size: 20px;
-  }
-  header, footer {
-    background-color: rgb(0,0,255);
-    color: white;
-    border: solid rgb(0,0,128) 20px;
-  }
-  main {
-    background-color: rgb(255,255,0);
-    color: black;
-    border: dashed rgb(128,128,0) 20px;
-  }
-  button {
-    position: absolute;
-    top: 50%;
-    left: 60%;
-    transform: translateY(-50%);
-  }
-  /*#sfondo_opaco {
-    position: absolute;
-    top: 0%;
-    width: 100vw;
-    height: 100vh;
-    max-width: 100%;
-    background-color: black;
-    opacity: 0.5;
-  }*/
-  .hidden {
-    visibility: hidden;
-  }
-  .visible {
-    visibility: visible;
-  }
-
-  #source {
-    position: absolute;
-    top: 50%;
-    left: 65%;
-    transform: translate(-50%,-50%);
-    width: 800px;
-    height: 500px;
-    background-color: white;
-    border-radius: 5px;
-    border-bottom-right-radius: 0px;
-    }
-  #source_bar {
-    position: absolute;
-    width: 800px;
-    height: 100px;
-    background-color: white;
-    border-radius: 5px;
-    border-bottom-right-radius: 0px;
-    border-bottom-left-radius: 0px;
-    box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.75);
-    font-size: 16px;
-    overflow-y: scroll;
-  }
-  #source_bar_2 {
-    position: absolute;
-    bottom: 0%;
-    width: 800px;
-    height: 400px;
-    background-color: white;
-    border-radius: 5px;
-    border-radius: 0px;
-    border-bottom-left-radius: 5px;
-    font-size: 16px;
-    overflow-y: scroll;
-  }
-  #source::after {
-    content: "HTML";
-    position:absolute;
-    top: 8px;
-    right: 3%;
-    background-color: #696d70;
-    padding: 3px;
-    border-radius: 5px;
-    color: white;
-    font-size: 14px;
-  }
-  #source::before {
-    z-index: 1300;
-    content: "CSS";
-    position:absolute;
-    top: 108px;
-    right: 3%;
-    background-color: #696d70;
-    padding: 3px;
-    border-radius: 5px;
-    color: white;
-    font-size: 14px;
-  }
-  #x {
-    position: absolute;
-    top: -30%;
-    right: 6%;
-    width: 20px;
-    height: 20px;
-  }
-  #x_icon {
-    width: 20px;
-    height: 20px;
-  }
-  /*SPINNER*/
-  #text_spinner{
-    position: absolute;
-    top: 160%;
-  }
-  #fascia_spinner {
-    position: absolute;
-    top: 170%;
-    left: 0%;
-    width: 100vw;
-    max-width: 100%;
-    height: 328.8px;
-  }
-  #container_spinner {
-    position: absolute;
-    left: 55.6px;
-    width: 328.8px;
-    height: 328.8px;
-  }
-  #container_my_spinner {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 100px;
-    height: 100px;
-    animation: spin 2s infinite;
-  }
-  #cerchio_1 {
-    position: absolute;
-    top: 0%;
-    left: 0%;
-    width: 20px;
-    height: 20px;
-    border: solid white 3px;
-    border-radius: 50%;
-    animation: translate_1 2s infinite alternate;
-  }
-  #cerchio_2 {
-    position: absolute;
-    top: 0%;
-    right: 0%;
-    width: 20px;
-    height: 20px;
-    border: solid white 3px;
-    border-radius: 50%;
-    animation: translate_2 2s infinite alternate;
-  }
-  #cerchio_3 {
-    position: absolute;
-    bottom: 0%;
-    left: 0%;
-    width: 20px;
-    height: 20px;
-    border: solid white 3px;
-    border-radius: 50%;
-    animation: translate_3 2s infinite alternate;
-  }
-  #cerchio_4 {
-    position: absolute;
-    bottom: 0%;
-    right: 0%;
-    width: 20px;
-    height: 20px;
-    border: solid white 3px;
-    border-radius: 50%;
-    animation: translate_4 2s infinite alternate;
-  }
-  @keyframes translate_1 {
-    from {top: 0%; left: 0%;}
-    to {top: 50%; left: 50%; width: 30px; height: 30px; border-color: #ff00fe;}
-  }
-  @keyframes translate_2 {
-    from {top: 0%; right: 0%;}
-    to {top: 50%; right: 50%; width: 30px; height: 30px; border-color: #00ff00;}
-  }
-  @keyframes translate_3 {
-    from {bottom: 0%; left: 0%;}
-    to {bottom: 50%; left: 50%; width: 30px; height: 30px; border-color: #0000ff;}
-  }
-  @keyframes translate_4 {
-    from {bottom: 0%; right: 0%;}
-    to {bottom: 50%; right: 50%; width: 30px; height: 30px; border-color: #ffff00;}
-  }
-  @keyframes spin {
-    from {transform: translate(-55%,-55%) rotate(0deg)}
-    to {transform: translate(-55%,-55%) rotate(360deg)}
-  }
-  /*SOURCE SPINNER*/
-
-  #source_spinner {
-    position: absolute;
-    top: 50%;
-    left: 65%;
-    transform: translate(-50%,-50%);
-    width: 800px;
-    height: 500px;
-    background-color: white;
-    border-radius: 5px;
-    border-bottom-right-radius: 0px;
-    }
-  #source_bar_spinner {
-    position: absolute;
-    width: 800px;
-    height: 100px;
-    background-color: white;
-    border-radius: 5px;
-    border-bottom-right-radius: 0px;
-    border-bottom-left-radius: 0px;
-    box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.75);
-    font-size: 16px;
-    overflow-y: scroll;
-  }
-  #source_bar_2_spinner {
-    position: absolute;
-    bottom: 0%;
-    width: 800px;
-    height: 400px;
-    background-color: white;
-    border-radius: 5px;
-    border-radius: 0px;
-    border-bottom-left-radius: 5px;
-    font-size: 16px;
-    overflow-y: scroll;
-  }
-  #source_spinner::after {
-    content: "HTML";
-    position:absolute;
-    top: 8px;
-    right: 3%;
-    background-color: #696d70;
-    padding: 3px;
-    border-radius: 5px;
-    color: white;
-    font-size: 14px;
-  }
-  #source_spinner::before {
-    z-index: 1300;
-    content: "CSS";
-    position:absolute;
-    top: 108px;
-    right: 3%;
-    background-color: #696d70;
-    padding: 3px;
-    border-radius: 5px;
-    color: white;
-    font-size: 14px;
-  }
-  #x_spinner {
-    position: absolute;
-    top: -30%;
-    right: 6%;
-    width: 20px;
-    height: 20px;
-  }
-  #x_icon_spinner {
-    width: 20px;
-    height: 20px;
-  }
-  #source_button_spinner_2 {
-    position: absolute;
-    top: 50%;
-    left: 75%;
-    transform: translateY(-50%);
-  }
-
-  /*SPINNER SUPERIORE E INFERIORE*/
-
-  #container_spinner_2 {
-    position: absolute;
-    top: 50%;
-    left: 75%;
-    transform: translate(-38%,-50%);
-    width: 328.8px;
-    height: 380px;
-  }
-  #container_my_spinner_sup {
-    position: absolute;
-    top: 0%;
-    left: 50%;
-    /*width: 100px;*/
-    height: 100px;
-    animation: spin_2 2s infinite;
-  }
-  #container_my_spinner_inf {
-    position: absolute;
-    bottom: 50px;
-    left: 50%;
-    width: 100px;
-    transform: translateY(-50%);
-    /*height: 100px;*/
-    animation: spin_2 2s infinite;
-  }
-  @keyframes spin_2 {
-    from {transform: translateX(-55%) rotate(0deg)}
-    to {transform: translateX(-55%) rotate(360deg)}
-  }
-
-  /*SLIDE*/
-
-  #text_slide {
-    position: absolute;
-    top: 240%;
-  }
-  #fascia_slide {
-    position: absolute;
-    top: 250%;
-    left: 0%;
-    width: 100vw;
-    max-width: 100%;
-    height: 328.8px;
-  }
-  #fifth_element {
-    position: absolute;
-    width: 328.8px;
-    height: 328.8px;
-  }
-  .fifth_element_position1 {
-    left: 55.6px;
-  }
-  .fifth_element_position2 {
-    left: 100%;
-    transition: 0.7s all linear;
-  }
-  #click_button_slide {
-    position: absolute;
-    top: -14%;
-    left: 220px;
-    transform: translateX(-50%);
-  }
-  /*SOURCE_SLIDE*/
-
-  #source_button_slide {
-      position: absolute;
-      top: 50%;
-      left: 60%;
-      transform: translateY(-50%);
-    }
-  #source_slide {
-    position: absolute;
-    top: 50%;
-    left: 65%;
-    transform: translate(-50%,-50%);
-    width: 800px;
-    height: 500px;
-    background-color: white;
-    border-radius: 5px;
-    border-bottom-right-radius: 0px;
-    }
-  #source_bar_slide {
-    position: absolute;
-    width: 800px;
-    height: 100px;
-    background-color: white;
-    border-radius: 5px;
-    border-bottom-right-radius: 0px;
-    border-bottom-left-radius: 0px;
-    box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.75);
-    font-size: 16px;
-    overflow-y: scroll;
-  }
-  #source_bar_2_slide {
-    position: absolute;
-    top: 20%;
-    width: 800px;
-    height: 200px;
-    background-color: white;
-    border-radius: 5px;
-    border-radius: 0px;
-    border-bottom-left-radius: 0px;
-    box-shadow: 0 7px 0 0 rgba(0, 0, 0, 0.75);
-    font-size: 16px;
-    overflow-y: scroll;
-  }
-  #source_bar_3_slide {
-    position: absolute;
-    bottom: 0%;
-    width: 800px;
-    height: 200px;
-    background-color: white;
-    border-radius: 5px;
-    border-radius: 0px;
-    border-bottom-left-radius: 5px;
-    font-size: 16px;
-    overflow-y: scroll;
-  }
-  #source_slide::after {
-    content: "HTML";
-    position:absolute;
-    top: 8px;
-    right: 3%;
-    background-color: #696d70;
-    padding: 3px;
-    border-radius: 5px;
-    color: white;
-    font-size: 14px;
-  }
-  #source_slide::before {
-    z-index: 1300;
-    content: "CSS";
-    position:absolute;
-    top: 108px;
-    right: 3%;
-    background-color: #696d70;
-    padding: 3px;
-    border-radius: 5px;
-    color: white;
-    font-size: 14px;
-  }
-  #x_slide {
-    position: absolute;
-    top: -30%;
-    right: 6%;
-    width: 20px;
-    height: 20px;
-  }
-  #x_icon_slide {
-    width: 20px;
-    height: 20px;
-  }
-  #JS_icon {
-    z-index: 1300;
-    position:absolute;
-    top: 222px;
-    right: 10.3%;
-    background-color: #696d70;
-    padding: 3px;
-    border-radius: 5px;
-    color: white;
-    font-size: 14px;
-  }
 
 
   </style> <link rel = "stylesheet" href = "style.css">
@@ -492,7 +28,6 @@
        <li><a href = "#TheBoxModel">The Box Model</a></li>
        <li><a href = "#Spinner">Spinner</a></li>
        <li><a href = "#Slide">Slide</a></li>
-       <li>Es. Javascript</li>
      </ul>
    </div>
 
@@ -669,10 +204,13 @@
 
     <div id = "text_slide"><h2 id = "Slide">Slide</h2></div>
     <div id = "fascia_slide">
-      <img id = "fifth_element" class = "fifth_element_position1" src="https://img.ibs.it/images/0616892498049_0_0_0_75.jpg" title="The Fifth Element" alt="The Fifth Element">
 
       <button id = "click_button_slide" type="button" class="btn btn-outline-light">Click</button>
       <button id = "source_button_slide" type="button" class="btn btn-outline-light">Source</button>
+
+      <div id = "text_slide_2"><p id = "Click_img">Click sul pulsante o sull'immagine! Click sul pulsante<br>affinché l'immagine torni nella posizione originale!</p></div>
+
+      <img id = "fifth_element" class = "fifth_element_position1" src="https://img.ibs.it/images/0616892498049_0_0_0_75.jpg" title="The Fifth Element" alt="The Fifth Element">
 
       <div id = "x_slide" class = "hidden"><img id = "x_icon_slide" src="img/x_icon.png"></div>
 
@@ -726,6 +264,15 @@
               $("#x_slide").removeClass("hidden")<br>
               $("#x_slide").addClass("visible")<br>
             })<br>
+            $("#fifth_element").on("click", function() {<br>
+               if($("#fifth_element").hasClass("fifth_element_position2")) {<br>
+                 $("#fifth_element").removeClass("fifth_element_position2")<br>
+                 $("#fifth_element").addClass("fifth_element_position1")<br>
+               } else {<br>
+                 $("#fifth_element").removeClass("fifth_element_position1")<br>
+                 $("#fifth_element").addClass("fifth_element_position2")<br>
+               }<br>
+            })<br>
             <br>
             $("#x_slide").on("click", function() {<br>
               if($("#x_slide").hasClass("visible")){<br>
@@ -749,7 +296,7 @@
 
         <a href = "index.html"><div id = "portfoliobuttonEx">PORTFOLIO</div></a>
         <a href = "Exercises.html"><div id = "exercisesbuttonEx">ESERCIZI</div></a>
-        <div id = "aboutbutton">ABOUT</div>
+        <a href = "about.html"><div id = "aboutbutton">ABOUT</div></a>
 
     </div>
 
@@ -834,6 +381,16 @@
     }
  })
 
+ $("#fifth_element").on("click", function() {
+    if($("#fifth_element").hasClass("fifth_element_position2")) {
+      $("#fifth_element").removeClass("fifth_element_position2")
+      $("#fifth_element").addClass("fifth_element_position1")
+    } else {
+      $("#fifth_element").removeClass("fifth_element_position1")
+      $("#fifth_element").addClass("fifth_element_position2")
+    }
+ })
+
  // SOURCE SLIDE
 
  $("#source_button_slide").on("click", function() {
@@ -865,7 +422,7 @@
 
 
  </script>
-
+  <script src = "script.js"></script>
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

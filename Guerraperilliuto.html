@@ -1,6 +1,8 @@
 <!doctype html>
 <html lang="en">
 <head>
+  <script src = "jquery.js"></script>
+
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -17,35 +19,70 @@
   <div id = "container">
 
     <div id = "nomecognome">Guerra per il liuto</div>
-    <div id = "main">
+    <div id = "main_Guerraperilliuto">
 
-      <div class = "bottom_controls">
-        <div class="container_controls">
-          <div class="home"><a class = "Backtoallprojects" href = "Index.html">Back to all projects</a></div>
+      <div id = "container_content_Guerraperilliuto">
 
-          <div class="Nextproj"><a class = "NextProject" href = "Playingcards.html">Next Project</a></div>
-</div>
-      </div>
+
 
       <video id = "videoLiuto" width="800" height="600" controls><source src="img/Guerraperilliuto.mp4" type="video/mp4"></video>
 
+        <div id = "container_testo_Guerraperilliuto">
+        <h2>Guerra per il liuto</h2>
+        <p>Video realizzato con la tecnica dello stop-motion durante il Laboratorio di Elementi Visivi del Progetto, nel corso<br>
+           di laurea triennale di Design della comunicazione, Politecnico di Milano. In collaborazione con Camilla Negri,
+           Enrico Monasteri. Filippo Testa e Jovana Martic. </P>
+        </div>
+
     </div>
+
+
+    <!--BOTTOM CONTROLS-->
+    <div class = "bottom_controls">
+     <div class="container_controls">
+
+
+
+
+          <a class = "Backtoallprojects" href = "Index.html">
+          <div id = "container_home" title="Torna alla home">
+
+             <div id = "blocco_1" class = "home_icon"></div>
+             <div id = "blocco_2" class = "home_icon"></div>
+             <div id = "blocco_3" class = "home_icon"></div>
+
+         </div>
+         </a>
+
+
+
+       <a class = "NextProject" href = "Playingcards.html"><div id = "Prossimo_Progetto" class="Nextproj Nextproj_pos">Prossimo<br>Progetto
+                                                                     <div id = "barretta_controls" class="barretta_w0"></div></div></a>
+    </div>
+    </div>
+    <!--END BOTTOM CONTROLS-->
+
+    </div>
+
+
     <!--<div class = "bottom_controls">
       <a class = "NextProject" href = "Playingcards.html"></a>
     </div> -->
     <div id = "barraluminosa"></div>
 
-    <div id = "stringasticky">
 
-        <a href = "index.html"><div id = "portfoliobutton">PORTFOLIO</div></a>
-        <div id = "exercisesbutton">ESERCIZI</div>
-        <div id = "aboutbutton">ABOUT</div>
-
-    </div>
 
   </div>
 
+  <div id = "stringasticky">
 
+      <a href = "index.html"><div id = "portfoliobutton">PORTFOLIO</div></a>
+      <a href = "Exercises.html"><div id = "exercisesbutton">ESERCIZI</div></a>
+      <a href = "about.html"><div id = "aboutbutton">ABOUT</div></a>
+
+  </div>
+
+  <script src = "script.js"></script>
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
