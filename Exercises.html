@@ -9,9 +9,9 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
   <style>
-  .blocco_scroll {
+  /*.blocco_scroll {
     overflow-y: hidden;
-  }
+  }*/
   #lista {
     position: absolute;
     top: 20%;
@@ -19,6 +19,7 @@
   h2 {
     font-size: 30px;
     color: white;
+    margin-left: 10px;
   }
   li {
     font-size: 20px;
@@ -30,18 +31,18 @@
   }
   #text_box_model{
     position: absolute;
-    top: 55%;
+    top: 70%;
   }
   #fascia_box_model {
     position: absolute;
-    top: 65%;
+    top: 80%;
     width: 100vw;
     height: 328.8px;
     max-width: 100%;
   }
   #container_box_model * {
     width: 400px;
-    margin: 0px;
+    margin-left: 20px;
     padding: 20px;
     font-size: 20px;
   }
@@ -146,20 +147,351 @@
     width: 20px;
     height: 20px;
   }
+  /*SPINNER*/
+  #text_spinner{
+    position: absolute;
+    top: 160%;
+  }
+  #fascia_spinner {
+    position: absolute;
+    top: 170%;
+    left: 0%;
+    width: 100vw;
+    max-width: 100%;
+    height: 328.8px;
+  }
+  #container_spinner {
+    position: absolute;
+    left: 55.6px;
+    width: 328.8px;
+    height: 328.8px;
+  }
+  #container_my_spinner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100px;
+    height: 100px;
+    animation: spin 2s infinite;
+  }
+  #cerchio_1 {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 20px;
+    height: 20px;
+    border: solid white 3px;
+    border-radius: 50%;
+    animation: translate_1 2s infinite alternate;
+  }
+  #cerchio_2 {
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    width: 20px;
+    height: 20px;
+    border: solid white 3px;
+    border-radius: 50%;
+    animation: translate_2 2s infinite alternate;
+  }
+  #cerchio_3 {
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    width: 20px;
+    height: 20px;
+    border: solid white 3px;
+    border-radius: 50%;
+    animation: translate_3 2s infinite alternate;
+  }
+  #cerchio_4 {
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+    width: 20px;
+    height: 20px;
+    border: solid white 3px;
+    border-radius: 50%;
+    animation: translate_4 2s infinite alternate;
+  }
+  @keyframes translate_1 {
+    from {top: 0%; left: 0%;}
+    to {top: 50%; left: 50%; width: 30px; height: 30px; border-color: #ff00fe;}
+  }
+  @keyframes translate_2 {
+    from {top: 0%; right: 0%;}
+    to {top: 50%; right: 50%; width: 30px; height: 30px; border-color: #00ff00;}
+  }
+  @keyframes translate_3 {
+    from {bottom: 0%; left: 0%;}
+    to {bottom: 50%; left: 50%; width: 30px; height: 30px; border-color: #0000ff;}
+  }
+  @keyframes translate_4 {
+    from {bottom: 0%; right: 0%;}
+    to {bottom: 50%; right: 50%; width: 30px; height: 30px; border-color: #ffff00;}
+  }
+  @keyframes spin {
+    from {transform: translate(-55%,-55%) rotate(0deg)}
+    to {transform: translate(-55%,-55%) rotate(360deg)}
+  }
+  /*SOURCE SPINNER*/
+
+  #source_spinner {
+    position: absolute;
+    top: 50%;
+    left: 65%;
+    transform: translate(-50%,-50%);
+    width: 800px;
+    height: 500px;
+    background-color: white;
+    border-radius: 5px;
+    border-bottom-right-radius: 0px;
+    }
+  #source_bar_spinner {
+    position: absolute;
+    width: 800px;
+    height: 100px;
+    background-color: white;
+    border-radius: 5px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.75);
+    font-size: 16px;
+    overflow-y: scroll;
+  }
+  #source_bar_2_spinner {
+    position: absolute;
+    bottom: 0%;
+    width: 800px;
+    height: 400px;
+    background-color: white;
+    border-radius: 5px;
+    border-radius: 0px;
+    border-bottom-left-radius: 5px;
+    font-size: 16px;
+    overflow-y: scroll;
+  }
+  #source_spinner::after {
+    content: "HTML";
+    position:absolute;
+    top: 8px;
+    right: 3%;
+    background-color: #696d70;
+    padding: 3px;
+    border-radius: 5px;
+    color: white;
+    font-size: 14px;
+  }
+  #source_spinner::before {
+    z-index: 1300;
+    content: "CSS";
+    position:absolute;
+    top: 108px;
+    right: 3%;
+    background-color: #696d70;
+    padding: 3px;
+    border-radius: 5px;
+    color: white;
+    font-size: 14px;
+  }
+  #x_spinner {
+    position: absolute;
+    top: -30%;
+    right: 6%;
+    width: 20px;
+    height: 20px;
+  }
+  #x_icon_spinner {
+    width: 20px;
+    height: 20px;
+  }
+  #source_button_spinner_2 {
+    position: absolute;
+    top: 50%;
+    left: 75%;
+    transform: translateY(-50%);
+  }
+
+  /*SPINNER SUPERIORE E INFERIORE*/
+
+  #container_spinner_2 {
+    position: absolute;
+    top: 50%;
+    left: 75%;
+    transform: translate(-38%,-50%);
+    width: 328.8px;
+    height: 380px;
+  }
+  #container_my_spinner_sup {
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    /*width: 100px;*/
+    height: 100px;
+    animation: spin_2 2s infinite;
+  }
+  #container_my_spinner_inf {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    width: 100px;
+    transform: translateY(-50%);
+    /*height: 100px;*/
+    animation: spin_2 2s infinite;
+  }
+  @keyframes spin_2 {
+    from {transform: translateX(-55%) rotate(0deg)}
+    to {transform: translateX(-55%) rotate(360deg)}
+  }
+
+  /*SLIDE*/
+
+  #text_slide {
+    position: absolute;
+    top: 240%;
+  }
+  #fascia_slide {
+    position: absolute;
+    top: 250%;
+    left: 0%;
+    width: 100vw;
+    max-width: 100%;
+    height: 328.8px;
+  }
+  #fifth_element {
+    position: absolute;
+    width: 328.8px;
+    height: 328.8px;
+  }
+  .fifth_element_position1 {
+    left: 55.6px;
+  }
+  .fifth_element_position2 {
+    left: 100%;
+    transition: 0.7s all linear;
+  }
+  #click_button_slide {
+    position: absolute;
+    top: -14%;
+    left: 220px;
+    transform: translateX(-50%);
+  }
+  /*SOURCE_SLIDE*/
+
+  #source_button_slide {
+      position: absolute;
+      top: 50%;
+      left: 60%;
+      transform: translateY(-50%);
+    }
+  #source_slide {
+    position: absolute;
+    top: 50%;
+    left: 65%;
+    transform: translate(-50%,-50%);
+    width: 800px;
+    height: 500px;
+    background-color: white;
+    border-radius: 5px;
+    border-bottom-right-radius: 0px;
+    }
+  #source_bar_slide {
+    position: absolute;
+    width: 800px;
+    height: 100px;
+    background-color: white;
+    border-radius: 5px;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.75);
+    font-size: 16px;
+    overflow-y: scroll;
+  }
+  #source_bar_2_slide {
+    position: absolute;
+    top: 20%;
+    width: 800px;
+    height: 200px;
+    background-color: white;
+    border-radius: 5px;
+    border-radius: 0px;
+    border-bottom-left-radius: 0px;
+    box-shadow: 0 7px 0 0 rgba(0, 0, 0, 0.75);
+    font-size: 16px;
+    overflow-y: scroll;
+  }
+  #source_bar_3_slide {
+    position: absolute;
+    bottom: 0%;
+    width: 800px;
+    height: 200px;
+    background-color: white;
+    border-radius: 5px;
+    border-radius: 0px;
+    border-bottom-left-radius: 5px;
+    font-size: 16px;
+    overflow-y: scroll;
+  }
+  #source_slide::after {
+    content: "HTML";
+    position:absolute;
+    top: 8px;
+    right: 3%;
+    background-color: #696d70;
+    padding: 3px;
+    border-radius: 5px;
+    color: white;
+    font-size: 14px;
+  }
+  #source_slide::before {
+    z-index: 1300;
+    content: "CSS";
+    position:absolute;
+    top: 108px;
+    right: 3%;
+    background-color: #696d70;
+    padding: 3px;
+    border-radius: 5px;
+    color: white;
+    font-size: 14px;
+  }
+  #x_slide {
+    position: absolute;
+    top: -30%;
+    right: 6%;
+    width: 20px;
+    height: 20px;
+  }
+  #x_icon_slide {
+    width: 20px;
+    height: 20px;
+  }
+  #JS_icon {
+    z-index: 1300;
+    position:absolute;
+    top: 222px;
+    right: 10.3%;
+    background-color: #696d70;
+    padding: 3px;
+    border-radius: 5px;
+    color: white;
+    font-size: 14px;
+  }
+
 
   </style> <link rel = "stylesheet" href = "style.css">
   <title>Esercizi | Gianluca Locatelli</title>
 </head>
-<body>
+<body style = "overflow-x: hidden">
 
 
 
     <div id = "lista">
       <h2>ESERCIZI</h2>
       <ul>
-       <li>The Box Model</li>
-       <li>Spinner</li>
-       <li>Slide</li>
+       <li><a href = "#TheBoxModel">The Box Model</a></li>
+       <li><a href = "#Spinner">Spinner</a></li>
+       <li><a href = "#Slide">Slide</a></li>
        <li>Es. Javascript</li>
      </ul>
    </div>
@@ -167,7 +499,7 @@
 
 
 
-      <div id = "text_box_model"><h2>The Box Model</h2></div>
+      <div id = "text_box_model"><h2 id = "TheBoxModel">The Box Model</h2></div>
       <div id = "fascia_box_model">
       <div id = "container_box_model" class = "container_box_model">
         <header class = "box">Header</header>
@@ -195,7 +527,7 @@
          <div id = "source_bar_2">
            <p>#container_box_model * {<br>
              width: 400px;<br>
-             margin: 0px;<br>
+             margin-left: 20px;<br>
              padding: 20px;<br>
              font-size: 20px;<br>
            }<br>
@@ -213,6 +545,204 @@
      </div>
     </div>
 
+    <div id = "text_spinner"><h2 id = "Spinner">Spinner</h2></div>
+    <div id = "fascia_spinner">
+      <div id = "container_spinner">
+        <div id = "container_my_spinner">
+          <div id = "cerchio_1"></div>
+          <div id = "cerchio_2"></div>
+          <div id = "cerchio_3"></div>
+          <div id = "cerchio_4"></div>
+        </div>
+      </div>
+
+      <div id = "container_spinner_2">
+        <div id = "container_my_spinner_sup" class = "hidden">
+          <div id = "cerchio_1"></div>
+          <div id = "cerchio_2"></div>
+          <div id = "cerchio_3"></div>
+          <div id = "cerchio_4"></div>
+        </div>
+        <div id = "container_my_spinner_inf" class = "hidden">
+          <div id = "cerchio_1"></div>
+          <div id = "cerchio_2"></div>
+          <div id = "cerchio_3"></div>
+          <div id = "cerchio_4"></div>
+        </div>
+      </div>
+
+      <button id = "source_button_spinner" type="button" class="btn btn-outline-light">Source</button>
+      <button id = "source_button_spinner_2" type="button" class="btn btn-outline-light">Bonus</button>
+
+      <div id = "x_spinner" class = "hidden"><img id = "x_icon_spinner" src="img/x_icon.png"></div>
+
+      <div id = "source_spinner" class = "hidden">
+
+          <div id = "source_bar_spinner">
+
+            <p>
+              &lt;div id = "container_my_spinner"&gt;<br>
+                &lt;div id = "cerchio_1"&gt;&lt;/div&gt;<br>
+                &lt;div id = "cerchio_2"&gt;&lt;/div&gt;<br>
+                &lt;div id = "cerchio_3"&gt;&lt;/div&gt;<br>
+                &lt;div id = "cerchio_4"&gt;&lt;/div&gt;<br>
+              &lt;/div&gt;<br>
+            <p>
+
+         </div>
+         <div id = "source_bar_2_spinner">
+           <p>
+             #container_my_spinner {<br>
+               position: absolute;<br>
+               top: 50%;<br>
+               left: 50%;<br>
+               width: 100px;<br>
+               height: 100px;<br>
+               animation: spin 2s infinite;<br>
+             }<br>
+             #cerchio_1 {<br>
+               position: absolute;<br>
+               top: 0%;<br>
+               left: 0%;<br>
+               width: 20px;<br>
+               height: 20px;<br>
+               border: solid white 3px;<br>
+               border-radius: 50%;<br>
+               animation: translate_1 2s infinite alternate;<br>
+             }<br>
+             #cerchio_2 {<br>
+               position: absolute;<br>
+               top: 0%;<br>
+               right: 0%;<br>
+               width: 20px;<br>
+               height: 20px;<br>
+               border: solid white 3px;<br>
+               border-radius: 50%;<br>
+               animation: translate_2 2s infinite alternate;<br>
+             }<br>
+             #cerchio_3 {<br>
+               position: absolute;<br>
+               bottom: 0%;<br>
+               left: 0%;<br>
+               width: 20px;<br>
+               height: 20px;<br>
+               border: solid white 3px;<br>
+               border-radius: 50%;<br>
+               animation: translate_3 2s infinite alternate;<br>
+             }<br>
+             #cerchio_4 {<br>
+               position: absolute;<br>
+               bottom: 0%;<br>
+               right: 0%;<br>
+               width: 20px;<br>
+               height: 20px;<br>
+               border: solid white 3px;<br>
+               border-radius: 50%;<br>
+               animation: translate_4 2s infinite alternate;<br>
+             }<br>
+             @keyframes translate_1 {<br>
+               from {top: 0%; left: 0%;}<br>
+               to {top: 50%; left: 50%; width: 30px; height: 30px; border-color: #ff00fe;}<br>
+             }<br>
+             @keyframes translate_2 {<br>
+               from {top: 0%; right: 0%;}<br>
+               to {top: 50%; right: 50%; width: 30px; height: 30px; border-color: #00ff00;}<br>
+             }<br>
+             @keyframes translate_3 {<br>
+               from {bottom: 0%; left: 0%;}<br>
+               to {bottom: 50%; left: 50%; width: 30px; height: 30px; border-color: #0000ff;}<br>
+             }<br>
+             @keyframes translate_4 {<br>
+               from {bottom: 0%; right: 0%;}<br>
+               to {bottom: 50%; right: 50%; width: 30px; height: 30px; border-color: #ffff00;}<br>
+             }<br>
+             @keyframes spin {<br>
+               from {transform: translate(-55%,-55%) rotate(0deg)}<br>
+               to {transform: translate(-55%,-55%) rotate(360deg)}<br>
+             }<br>
+           </p>
+         </div>
+     </div>
+    </div>
+
+    <!--SLIDE-->
+
+    <div id = "text_slide"><h2 id = "Slide">Slide</h2></div>
+    <div id = "fascia_slide">
+      <img id = "fifth_element" class = "fifth_element_position1" src="https://img.ibs.it/images/0616892498049_0_0_0_75.jpg" title="The Fifth Element" alt="The Fifth Element">
+
+      <button id = "click_button_slide" type="button" class="btn btn-outline-light">Click</button>
+      <button id = "source_button_slide" type="button" class="btn btn-outline-light">Source</button>
+
+      <div id = "x_slide" class = "hidden"><img id = "x_icon_slide" src="img/x_icon.png"></div>
+
+      <div id = "JS_icon" class = "hidden">JS</div>
+
+      <div id = "source_slide" class = "hidden">
+
+          <div id = "source_bar_slide">
+
+            <p>
+              &lt;div id = "fascia_slide"&gt;<br>
+                &lt;img id = "fifth_element" class = "fifth_element_position1" src="https://img.ibs.it/images/0616892498049_0_0_0_75.jpg" title="The Fifth Element" alt="The Fifth Element"&gt;<br>
+               <br>
+                &lt;button id = "click_button_slide" type="button" class="btn btn-outline-light">Click&lt;/button&gt;
+            <p>
+
+         </div>
+         <div id = "source_bar_2_slide">
+           <p>#fascia_slide {<br>
+             position: absolute;<br>
+             top: 250%;<br>
+             left: 0%;<br>
+             width: 100vw;<br>
+             max-width: 100%;<br>
+             height: 328.8px;<br>
+           }<br>
+           #fifth_element {<br>
+             position: absolute;<br>
+             width: 328.8px;<br>
+             height: 328.8px;<br>
+           }<br>
+           .fifth_element_position1 {<br>
+             left: 55.6px;<br>
+           }<br>
+           .fifth_element_position2 {<br>
+             left: 100%;<br>
+             transition: 0.7s all linear;<br>
+           }<br>
+           #click_button_slide {<br>
+             position: absolute;<br>
+             top: -14%;<br>
+             left: 220px;<br>
+             transform: translateX(-50%);<br>
+           }</p>
+         </div>
+
+         <div id = "source_bar_3_slide">
+           <p> $("#source_button_slide").on("click", function() {<br>
+              $("#source_slide").removeClass("hidden")<br>
+              $("#source_slide").addClass("visible")<br>
+              $("#x_slide").removeClass("hidden")<br>
+              $("#x_slide").addClass("visible")<br>
+            })<br>
+            <br>
+            $("#x_slide").on("click", function() {<br>
+              if($("#x_slide").hasClass("visible")){<br>
+                   $("#x_slide").removeClass("visible")<br>
+                   $("#x_slide").addClass("hidden")<br>
+                   $("#source_slide").removeClass("visible")<br>
+                   $("#source_slide").addClass("hidden")<br>
+            }})</p>
+         </div>
+     </div>
+
+    </div>
+
+
+
+
+
 
 
     <div id = "stringasticky">
@@ -227,6 +757,8 @@
 
 
 
+
+
  <!--<div id = "sfondo_opaco" class = "hidden"></div>-->
 
 
@@ -236,8 +768,8 @@
    $("#source_button").on("click", function() {
      $("#source").removeClass("hidden")
      $("#source").addClass("visible")
-     $("#sfondo_opaco").removeClass("hidden")
-     $("#sfondo_opaco").addClass("visible")
+     /*$("#sfondo_opaco").removeClass("hidden")
+     $("#sfondo_opaco").addClass("visible")*/
      $("#x").removeClass("hidden")
      $("#x").addClass("visible")
    })
@@ -249,6 +781,85 @@
           $("#source").removeClass("visible")
           $("#source").addClass("hidden")
    }})
+
+   /*SPINNER*/
+
+   $("#source_button_spinner").on("click", function() {
+     $("#source_spinner").removeClass("hidden")
+     $("#source_spinner").addClass("visible")
+     /*$("#sfondo_opaco").removeClass("hidden")
+     $("#sfondo_opaco").addClass("visible")*/
+     $("#x_spinner").removeClass("hidden")
+     $("#x_spinner").addClass("visible")
+   })
+
+   $("#x_spinner").on("click", function() {
+     if($("#x_spinner").hasClass("visible")){
+          $("#x_spinner").removeClass("visible")
+          $("#x_spinner").addClass("hidden")
+          $("#source_spinner").removeClass("visible")
+          $("#source_spinner").addClass("hidden")
+   }})
+
+ // SPINNER BONUS
+
+ $("#source_button_spinner_2").on("click", function() {
+   if($("#container_my_spinner_sup").hasClass("hidden")) {
+     $("#container_my_spinner_sup").removeClass("hidden")
+     $("#container_my_spinner_sup").addClass("visible")
+     $("#container_my_spinner_inf").removeClass("hidden")
+     $("#container_my_spinner_inf").addClass("visible")
+   } else {
+     $("#container_my_spinner_sup").removeClass("visible")
+     $("#container_my_spinner_sup").addClass("hidden")
+     $("#container_my_spinner_inf").removeClass("visible")
+     $("#container_my_spinner_inf").addClass("hidden")
+   }
+ })
+
+ // SLIDE
+
+ /*$("#fifth_element").on("click", function() {
+     $("#fifth_element").removeClass("fifth_element_position1")
+     $("#fifth_element").addClass("fifth_element_position2")
+ })*/
+
+ $("#click_button_slide").on("click", function() {
+    if($("#fifth_element").hasClass("fifth_element_position2")) {
+      $("#fifth_element").removeClass("fifth_element_position2")
+      $("#fifth_element").addClass("fifth_element_position1")
+    } else {
+      $("#fifth_element").removeClass("fifth_element_position1")
+      $("#fifth_element").addClass("fifth_element_position2")
+    }
+ })
+
+ // SOURCE SLIDE
+
+ $("#source_button_slide").on("click", function() {
+   $("#source_slide").removeClass("hidden")
+   $("#source_slide").addClass("visible")
+   $("#x_slide").removeClass("hidden")
+   $("#x_slide").addClass("visible")
+   $("#JS_icon").removeClass("hidden")
+   $("#JS_icon").addClass("visible")
+ })
+
+ $("#x_slide").on("click", function() {
+   if($("#x_slide").hasClass("visible")){
+        $("#x_slide").removeClass("visible")
+        $("#x_slide").addClass("hidden")
+        $("#source_slide").removeClass("visible")
+        $("#source_slide").addClass("hidden")
+        $("#JS_icon").removeClass("visible")
+        $("#JS_icon").addClass("hidden")
+ }})
+
+
+
+
+
+
 
 
 
