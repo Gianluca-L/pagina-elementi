@@ -429,7 +429,7 @@ a:hover {
   position: absolute;
   left: 10%;
   width: 80%;
-  height: 115vh;
+  height: 122.5vh;
 }
 #container_img_dettaglio {
   position: absolute;
@@ -1054,8 +1054,31 @@ button {
 }
 #email {
   position: absolute;
-  top: 15%;
+  top: 20%;
   right: 8%;
   font-size: 16px;
   color: white;
+}
+#email:before {
+  position: absolute;
+  top: -60%;
+  right: 100%;
+  content: url(img/gmail.png);
+  width: 70px;
+  height: 70px;
+}
+#facebook {
+  position: absolute;
+  top: 40%;
+  right: 20.7%;
+}
+#pinterest {
+  position: absolute;
+  top: 38.5%;
+  right: 13%;
+}
+#behance {
+  position: absolute;
+  top: 40.3%;
+  right: 6.35%;
 }
