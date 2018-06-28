@@ -318,6 +318,9 @@ a:hover {
             bottom: 0%;
             left: 0%;
 }
+video:hover {
+  cursor: pointer;
+}
 #container_testo_Guerraperilliuto {
   position: absolute;
   bottom: 0%;
