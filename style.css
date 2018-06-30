@@ -1151,14 +1151,90 @@ button {
   position: absolute;
   top: 40%;
   right: 20.7%;
+  width: 50px;
+  height: 49.9px;
 }
+.facebook {
+  background-image: url(img/facebook.png);
+}
+.facebook_invertito {
+  background-image: url(img/facebook_invertito.png);
+}
+/*#facebook_invertito {
+  position: absolute;
+  top: 40%;
+  right: 20.7%;
+}*/
 #pinterest {
   position: absolute;
   top: 38.5%;
   right: 13%;
+  width: 65px;
+  height: 65px;
 }
+.pinterest  {
+  background-image: url(img/pinterest.png);
+}
+.pinterest_invertito {
+  background-image: url(img/pinterest_invertito.png);
+}
+/*#pinterest_invertito {
+  position: absolute;
+  top: 38.5%;
+  right: 13%;
+}*/
 #behance {
   position: absolute;
   top: 40.3%;
   right: 6.35%;
+  width: 50px;
+  height: 50px;
+}
+.behance  {
+  background-image: url(img/behance.png);
+}
+.behance_invertito {
+  background-image: url(img/behance_invertito.png);
+}
+/*#behance_invertito {
+  position: absolute;
+  top: 40.3%;
+  right: 6.35%;
+}*/
+#software {
+  position: absolute;
+  top: 73%;
+  right: 13.5%;
+  font-size: 25px;
+  color: white;
+}
+#software:before {
+  position: absolute;
+  top: -9%;
+  right: 112%;
+  content: url(img/ingranaggi_software.png);
+  width: 50px;
+  height: 50px;
+}
+#container_software_icons {
+  position: absolute;
+  top: 86%;
+  right: 5.2%;
+  width: 250px;
+  height: 50px;
+}
+#Ps_icon {
+  position: absolute;
+}
+#Ai_icon {
+  position: absolute;
+  left: 25%;
+}
+#Pr_icon {
+  position: absolute;
+  left: 50%;
+}
+#Id_icon {
+  position: absolute;
+  left: 75%;
 }

@@ -57,3 +57,48 @@ function icon_torna_su_leave() {
 
 $("#cont_icon_freccina").mouseover(icon_torna_su_over);
 $("#cont_icon_freccina").mouseleave(icon_torna_su_leave);
+
+// ABOUT
+function facebook() {
+  if($("#facebook").hasClass("facebook")) {
+    $("#facebook").removeClass("facebook")
+    $("#facebook").addClass("facebook_invertito")
+  }
+  }
+function pinterest() {
+  if($("#pinterest").hasClass("pinterest")) {
+    $("#pinterest").removeClass("pinterest")
+    $("#pinterest").addClass("pinterest_invertito")
+  }
+  }
+function behance() {
+  if($("#behance").hasClass("behance")) {
+    $("#behance").removeClass("behance")
+    $("#behance").addClass("behance_invertito")
+}
+}
+$("#facebook").mouseover(facebook);
+$("#pinterest").mouseover(pinterest);
+$("#behance").mouseover(behance);
+
+function social_icon_facebook() {
+  if($("#facebook").hasClass("facebook_invertito")) {
+    $("#facebook").removeClass("facebook_invertito")
+    $("#facebook").addClass("facebook")
+  }
+  }
+function social_icon_pinterest() {
+  if($("#pinterest").hasClass("pinterest_invertito")) {
+    $("#pinterest").removeClass("pinterest_invertito")
+    $("#pinterest").addClass("pinterest")
+  }
+  }
+function social_icon_behance() {
+  if($("#behance").hasClass("behance_invertito")) {
+    $("#behance").removeClass("behance_invertito")
+    $("#behance").addClass("behance")
+}
+}
+$("#facebook").mouseleave(social_icon_facebook);
+$("#pinterest").mouseleave(social_icon_pinterest);
+$("#behance").mouseleave(social_icon_behance);
