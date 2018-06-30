@@ -189,6 +189,14 @@ a:hover {
                   max-width: 30vw;
                   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.75);
 }
+#Guerraperilliuto_2 {
+                  position: absolute;
+                  top: 0%;
+                  left: 50%;
+                  max-width: 30vw;
+                  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.75);
+                  transform: translateX(-50%);
+}
 #Playingcards {
                   position: absolute;
                   top: 0%;
@@ -681,6 +689,9 @@ button {
   width: 20px;
   height: 20px;
 }
+#x_icon:hover {
+  cursor: pointer;
+}
 /*SPINNER*/
 #text_spinner{
   position: absolute;
@@ -838,6 +849,9 @@ button {
 #x_icon_spinner {
   width: 20px;
   height: 20px;
+}
+#x_icon_spinner:hover {
+  cursor: pointer;
 }
 #source_button_spinner_2 {
   position: absolute;
@@ -1012,6 +1026,9 @@ button {
 #x_icon_slide {
   width: 20px;
   height: 20px;
+}
+#x_icon_slide:hover {
+  cursor: pointer;
 }
 #JS_icon {
   z-index: 1300;
