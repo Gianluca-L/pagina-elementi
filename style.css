@@ -189,14 +189,6 @@ a:hover {
                   max-width: 30vw;
                   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.75);
 }
-#Guerraperilliuto_2 {
-                  position: absolute;
-                  top: 0%;
-                  left: 50%;
-                  max-width: 30vw;
-                  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.75);
-                  transform: translateX(-50%);
-}
 #Playingcards {
                   position: absolute;
                   top: 0%;
