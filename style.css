@@ -563,6 +563,10 @@ li {
 p {
   margin-left: 10px;
 }
+#TheBoxModel_invisibile {
+  position: absolute;
+  top: 50%;
+}
 #text_box_model{
   position: absolute;
   top: 70%;
@@ -680,11 +684,18 @@ button {
 #x_icon {
   width: 20px;
   height: 20px;
+  transform: rotate(0deg);
+  transition: transform 0.3s;
 }
 #x_icon:hover {
   cursor: pointer;
+  transform: rotate(90deg);
 }
 /*SPINNER*/
+#Spinner_invisibile {
+  position: absolute;
+  top: 140%;
+}
 #text_spinner{
   position: absolute;
   top: 160%;
@@ -841,9 +852,12 @@ button {
 #x_icon_spinner {
   width: 20px;
   height: 20px;
+  transform: rotate(0deg);
+  transition: transform 0.3s;
 }
 #x_icon_spinner:hover {
   cursor: pointer;
+  transform: rotate(90deg);
 }
 #source_button_spinner_2 {
   position: absolute;
@@ -885,7 +899,10 @@ button {
 }
 
 /*SLIDE*/
-
+#Slide_invisibile {
+  position: absolute;
+  top: 220%;
+}
 #text_slide {
   position: absolute;
   top: 240%;
@@ -1018,9 +1035,12 @@ button {
 #x_icon_slide {
   width: 20px;
   height: 20px;
+  transform: rotate(0deg);
+  transition: transform 0.3s;
 }
 #x_icon_slide:hover {
   cursor: pointer;
+  transform: rotate(90deg);
 }
 #JS_icon {
   z-index: 1300;
@@ -1032,6 +1052,52 @@ button {
   border-radius: 5px;
   color: white;
   font-size: 14px;
+}
+/*TASTO TORNA SU*/
+#cont_icon_freccina {
+  position: absolute;
+  bottom: -45%;
+  right: 4%;
+  width: 40px;
+  height: 40px;
+}
+#icon_torna_su {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: solid white 2px;
+  transform: translate(-50%,-50%);
+}
+#freccina {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 8px;
+  height: 8px;
+}
+.background_icon_torna_su {
+  background-color: white;
+}
+.colori_freccina_prima {
+  border: solid 2px;
+  border-left-color: white;
+  border-top-color: white;
+  border-right-color: black;
+  border-bottom-color: black;
+  transform: translateX(-50%) rotate(45deg);
+  transition: transform 0.1s;
+}
+.colori_freccina_dopo {
+  border: solid 2px;
+  border-left-color: black;
+  border-top-color: black;
+  border-right-color: white;
+  border-bottom-color: white;
+  transform: translateX(-50%) translateY(-60%) rotate(45deg);
+  transition: transform 0.1s;
 }
 /* ABOUT */
 #main_about {
@@ -1052,7 +1118,7 @@ button {
 #container_testo_about {
   position: absolute;
   top: 15%;
-  left: 50%;
+  left: 47%;
   width: 33%;
   height: 20vw;
   color: white;
@@ -1063,6 +1129,8 @@ button {
   position: absolute;
   top: 15%;
   left: 8%;
+  width: 200px;
+  border: solid white 2px;
 }
 #email {
   position: absolute;

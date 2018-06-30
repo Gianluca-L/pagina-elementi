@@ -41,3 +41,19 @@ function arrow_icon_width_sx() {
     }
 $("#Progetto_Precedente").mouseover(arrow_icon_width_sx);
 $("#Progetto_Precedente").mouseleave(arrow_icon_width_out_sx);
+
+//TASTO TORNA SU, ESERCIZI
+
+function icon_torna_su_over() {
+  $("#icon_torna_su").addClass("background_icon_torna_su")
+  $("#freccina").removeClass("colori_freccina_prima")
+  $("#freccina").addClass("colori_freccina_dopo")
+}
+function icon_torna_su_leave() {
+  $("#icon_torna_su").removeClass("background_icon_torna_su")
+  $("#freccina").removeClass("colori_freccina_dopo")
+  $("#freccina").addClass("colori_freccina_prima")
+}
+
+$("#cont_icon_freccina").mouseover(icon_torna_su_over);
+$("#cont_icon_freccina").mouseleave(icon_torna_su_leave);
