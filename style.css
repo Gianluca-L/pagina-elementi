@@ -54,7 +54,7 @@ body {
   left: 0%;
   background: linear-gradient(#000000, #696d70);
   width: 100vw;
-  height: 70vh;
+  height: 110vh;
   max-width: 100%;
 }
 #container_content {
@@ -175,6 +175,13 @@ a:hover {
               height: 50%;
               max-width: 100%;
 }
+#containerimg_2 {
+              position: absolute;
+              top: 47%;
+              left: 0%;
+              width: 100%;
+              max-width: 100%;
+}
 /*.row {
   position: absolute;
   top: 0%;
@@ -185,24 +192,30 @@ a:hover {
 #Guerraperilliuto {
                   position: absolute;
                   top: 0%;
-                  left: 3%;
+                  left: 18%;
                   max-width: 30vw;
                   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.75);
 }
 #Playingcards {
                   position: absolute;
                   top: 0%;
-                  left: 50%;
+                  right: 18%;
                   max-width: 30vw;
                   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.75);
-                  transform: translateX(-50%);
 }
 #Bookcover {
                   position: absolute;
                   top: 0%;
-                  right: 3%;
+                  left: 18%;
                   max-width: 30vw;
                   box-shadow: 0 0 7px 0 rgba(255, 255, 255, 0.75);
+}
+#monografia_index {
+  position: absolute;
+  top: 0%;
+  right: 18%;
+  max-width: 30vw;
+  box-shadow: 0 0 7px 0 rgba(255, 255, 255, 0.75);
 }
 /* BOTTOM CONTROLS */
 .bottom_controls {
