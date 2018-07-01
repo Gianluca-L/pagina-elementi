@@ -3,6 +3,7 @@
 <head>
   <script src = "jquery.js"></script>
   <script src = "script.js"></script>
+
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -14,13 +15,13 @@
 
 
   </style> <link rel = "stylesheet" href = "style.css">
-  <title>Book Cover | Gianluca Locatelli</title>
+  <title>Monografia | Gianluca Locatelli</title>
 </head>
 <body>
-
+<div id = "torna_su_invisibile_monografia"></div>
   <div id = "container">
 
-    <div id = "nomecognome">Book Cover</div>
+    <div id = "nomecognome"   style = "line-height: 50px">Bruce Mau<br> <span style = "font-size: 25px">an integrated monography</span></div>
 
     <div id = "barraluminosa"></div>
 
@@ -28,26 +29,37 @@
 
   </div>
 
-    <div id = "main_book_cover">
+    <div id = "main_monografia">
 
-      <div id = "container_content_Book_cover">
+      <div id = "container_content_monografia">
 
-        <div id = "container_img_dettaglio"><img id = "Dettaglio" src="img/Dettaglio.png" title="Dettaglio" alt="Dettaglio"></div>
-        <div id = "container_3_img">
-          <img id = "Prima_di_copertina" src="img/Prima_di_copertina.png" title="Prima di copertina" alt="Prima di copertina">
-        <img id = "Prima_e_dorso" src="img/Prima_e_dorso.png" title="Prima e dorso" alt="Prima e dorso">
-          <img id = "Quarta_di_copertina" src="img/Quarta_di_copertina.png" title="Quarta di copertina" alt="Quarta di copertina">
+        <div id = "container_img_monografia"><img id = "monografia" src="img/monografia.png" title="Monografia" alt="Monografia"></div>
+
+        <h2 id = "stopmotion_text">Stop Motion</h2>
+
+        <video id = "stopmotion_BM"  controls><source src="img/Stop motion.mp4" type="video/mp4"></video>
+
+        <h2 id = "Rilegatura_text">Rilegatura</h2>
+
+        <div id = "container_img_rilegatura">
+          <img id = "rilegatura_1" src="img/rilegatura_1.png" title="Dettaglio" alt="Dettaglio">
+          <img id = "rilegatura_2" src="img/rilegatura_2.png" title="Dettaglio" alt="Dettaglio">
+          <img id = "rilegatura_3" src="img/rilegatura_3.png" title="Dettaglio" alt="Dettaglio">
+          <img id = "rilegatura_4" src="img/rilegatura_4.png" title="Dettaglio" alt="Dettaglio">
         </div>
 
-        <div id = "container_testo_Book_cover">
-        <h2>Progetto di una sovraccopertina</h2>
-        <p>Ho preso ispirazione dai <em>cartonnages</em> di Pierre J. Hetzel, <br>
-          le edizioni di lusso dei <em>Voyages Extraordinaires</em>,
-          i romanzi originali dell'autore francese Jules Verne pubblicati tra il 1863 e il 1905.
-          Il mio intento era quello di realizzare un'edizione<br> da collezione moderna de "De la Terre à la Lune", adottando<br> uno stile minimale.
-          Ho realizzato le illustrazioni, tra cui la sfera armillare (antico strumento di misurazione astronomica) in prima di copertina, in Illustrator
-          e stampato la sovraccopertina<br> su carta nera patinata opaca da 330 grammi (stampa UV),<br> con lucidatura
-          sulle parti bianche, perciò al tatto si percepiscono testi e figure in rilievo.</P>
+        <h2 id = "Rubrica34-43_text">Rubrica 34-43</h2>
+
+        <img id = "pdf_rubrica" src="img/rubrica_34_43.png" title="Rubrica 34-43" alt="Rubrica 34-43">
+
+
+        <div id = "container_testo_monografia">
+
+        <p>Monografia dedicata al designer canadese Bruce Mau, progettata e realizzata per il Laboratorio di Fondamenti<br> del Progetto,
+          Design della comunicazione, in collaborazione<br> con Enrico Monasteri, Martina Pennino e Teresa Zavattiero.<br> La rivista è divisa in
+          quattro fascicoli separati, posti in una struttura a tasche, e possono essere uniti tra loro grazie<br> ad un sistema di
+          fessure e linguette. Mi sono occupato della rubrica 34-43.
+        </P>
         </div>
 
       </div>
@@ -59,7 +71,7 @@
      <!--BOTTOM CONTROLS-->
     <div class = "bottom_controls">
       <div class="container_controls">
-        <a class = "Previousproject" href = "Playingcards.html"><div id = "Progetto_Precedente" class="Prevproj Prevproj_pos">Progetto<br>Precedente
+        <a class = "Previousproject" href = "Bookcover.html"><div id = "Progetto_Precedente" class="Prevproj Prevproj_pos">Progetto<br>Precedente
                                                                       <div id = "barretta_controls_sx" class="barretta_w0"></div></div></a>
 
 
@@ -76,12 +88,13 @@
 
 
 
-        <a class = "NextProject" href = "Monografia.html"><div id = "Prossimo_Progetto" class="Nextproj Nextproj_pos">Prossimo<br>Progetto
+        <a class = "NextProject" href = "Exercises.html"><div id = "Prossimo_Progetto" class="Nextproj Nextproj_pos">Prossimo<br>Progetto
                                                                       <div id = "barretta_controls" class="barretta_w0"></div></div></a>
      </div>
     </div>
      <!--END BOTTOM CONTROLS-->
 
+     <a href = "#torna_su_invisibile_monografia"><div id = "cont_icon_freccina_monografia" title="Torna su"><div id = "icon_torna_su_monografia"><div id = "freccina_monografia" class = "colori_freccina_prima_monografia"></div></div></div></a>
 </div>
 
   <div id = "stringasticky">

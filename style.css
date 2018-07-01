@@ -1238,3 +1238,100 @@ button {
   position: absolute;
   left: 75%;
 }
+/* MONOGRAFIA */
+#main_monografia {
+  position: absolute;
+  top: 50vh;
+  width: 100vw;
+  height: 420vh;
+  max-width: 100%;
+  background: linear-gradient(#000000, #696d70);
+}
+#container_content_monografia {
+  position: absolute;
+  left: 10%;
+  width: 80%;
+  height: 115vh;
+}
+#container_img_monografia {
+  position: absolute;
+  top: 7%;
+  left: 0%;
+  width: 50vw;
+  height: 33.33vw;
+}
+#monografia {
+  width: 50vw;
+  box-shadow: 0 0 2px 0 rgba(255, 255, 255, 0.75);
+}
+#container_testo_monografia {
+  position: absolute;
+  bottom: 0%;
+  right: 0%;
+  width: 33%;
+  height: 54vw;
+  color: white;
+  font-size: 16px;
+}
+#stopmotion_text {
+  position: absolute;
+  top: 70%;
+  left: 0%;
+}
+#stopmotion_BM {
+  position: absolute;
+  top: 80%;
+  left: 0%;
+  width: 50vw;
+}
+#Rilegatura_text {
+  position: absolute;
+  top: 135%;
+  left: 0%;
+}
+#container_img_rilegatura {
+  position: absolute;
+  top: 145%;
+  left: 0%;
+  width: 50vw;
+  height: 44vw;
+}
+#rilegatura_1 {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 24.5vw;
+  box-shadow: 0 0 2px 0 rgba(255, 255, 255, 0.75);
+}
+#rilegatura_2 {
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  width: 24.5vw;
+  box-shadow: 0 0 2px 0 rgba(255, 255, 255, 0.75);
+}
+#rilegatura_3 {
+  position: absolute;
+  top: 39.7%;
+  left: 0%;
+  width: 24.5vw;
+  box-shadow: 0 0 2px 0 rgba(255, 255, 255, 0.75);
+}
+#rilegatura_4 {
+  position: absolute;
+  top: 39.7%;
+  right: 0%;
+  width: 24.5vw;
+  box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.75);
+}
+#Rubrica34-43_text {
+  position: absolute;
+  top: 210%;
+  left: 0%;
+}
+#pdf_rubrica {
+  position: absolute;
+  top: 220%;
+  left: 0%;
+  width: 50vw;
+}
